@@ -1,6 +1,7 @@
 import random
 from typing import List
-from models import Question
+from src.models import Question
+
 
 DIFFICULTY_RANGES = {
     "easy": (1, 10),
