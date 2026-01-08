@@ -1,5 +1,6 @@
 from typing import List
-from models import Question, Attempt
+from src.models import Question, Attempt
+
 
 def grade_questions(
     questions: List[Question],
