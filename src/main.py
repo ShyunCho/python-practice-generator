@@ -1,7 +1,8 @@
 import time
-from generator import generate_questions
-from grader import grade_questions
-from utils import now_stamp, save_json
+from src.generator import generate_questions
+from src.grader import grade_questions
+from src.utils import now_stamp, save_json
+
 
 def ask_int(prompt: str) -> int:
     while True:
