@@ -13,3 +13,7 @@ Designed for tutoring sessions with adjustable difficulty levels and instant gra
 ## How to Run
 ```bash
 python src/main.py
+
+## Notes (1/11/2026)
+- Tested on Python 3.8 (macOS)
+- Updated typing annotations for backward compatibility
