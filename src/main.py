@@ -1,3 +1,4 @@
+from typing import Optional, List
 import time
 from src.generator import generate_questions
 from src.grader import grade_questions
@@ -12,7 +13,7 @@ def ask_int(prompt: str) -> int:
         except ValueError:
             print("Please enter a number.")
 
-def ask_ops() -> list[str]:
+def ask_ops() -> List[str]:
     print("Choose operations (e.g., + - *). Example: + -")
     raw = input("Operations: ").strip().split()
     ops = [x for x in raw if x in {"+", "-", "*"}]
@@ -33,7 +34,8 @@ def main():
 
     questions = generate_questions(n=n, ops=ops, difficulty=difficulty)
 
-    answers: list[int | None] = []
+    answers: List[Optional[int]] = []
+
     start = time.time()
     for i, q in enumerate(questions, start=1):
         print(f"\nQ{i}. {q.text()} = ?")

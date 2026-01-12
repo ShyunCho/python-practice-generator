@@ -1,11 +1,12 @@
-from typing import List
-from src.models import Question, Attempt
+from typing import List, Optional
+from src.models import Attempt, Question
 
 
 def grade_questions(
-    questions: List[Question],
-    answers: list[int | None],
+    questions: List[Question], 
+    answers: List[Optional[int]]
 ) -> List[Attempt]:
+
     attempts: List[Attempt] = []
 
     for question, user_answer in zip(questions, answers):
