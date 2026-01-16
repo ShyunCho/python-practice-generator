@@ -1,4 +1,4 @@
-# Python Practice Generator
+# Python Practice Generator!
 
 A simple CLI tool that generates math practice questions for beginners.
 Designed for tutoring sessions with adjustable difficulty levels and instant grading.
